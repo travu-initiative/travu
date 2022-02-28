@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Travu - Online Bus Tickets </title>
+<!--
+Holiday Template
+http://www.templatemo.com/tm-475-holiday
+-->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,400italic,600,700' rel='stylesheet' type='text/css'>
+  <link href="css/font-awesome.min.css" rel="stylesheet">
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-datetimepicker.min.css" rel="stylesheet">  
+  <link href="css/flexslider.css" rel="stylesheet">
+  <link href="css/templatemo-style.css" rel="stylesheet">
+
+  </head>
+  <body class="tm-gray-bg">
+  	<!-- Header -->
+  	<div class="tm-header">
+  		<div class="container">
+  			<div class="row">
+  				<div class="col-lg-6 col-md-4 col-sm-3 tm-site-name-container">
+  					<a href="#" class="tm-site-name">Travu</a>	
+  				</div>
+	  			<div class="col-lg-6 col-md-8 col-sm-9">
+	  				<div class="mobile-menu-icon">
+		              <i class="fa fa-bars"></i>
+		            </div>
+	  				<nav class="tm-nav">
+						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="hire.html">Hire</a></li>
+							<li><a href="bonus.html">Bonus</a></li>
+							<li><a href="about.html">About</a></li>
+						</ul>
+					</nav>		
+	  			</div>				
+  			</div>
+  		</div>	  	
+  	</div>
+	
+	<!-- Banner -->
+	<section class="tm-banner">
+		<!-- Flexslider -->
+		<div class="flexslider flexslider-banner">
+		  <ul class="slides">
+		    <li>
+			    <div class="tm-banner-inner">
+					<h1 class="tm-banner-title">Make <span class="tm-yellow-text">Travu</span> Easy</h1>
+					<p class="tm-banner-subtitle">Transaction Status</p>
+
+					<section class="section-padding-bottom">
+						<div class="container">
+							<div class="row">
+								<a href="" class="tm-banner-link">PROMOTION <sup>(9) new</sup> </a>
+								<a href="" class="tm-banner-link">ETICKET HISTORY <sup>(25) new</sup> </a>
+							</div>	
+						</div>	
+					</section>
+
+				</div>
+		      <img src="img/banner-2.jpg" alt="Image" />
+		    </li>
+		  </ul>
+		</div>	
+	</section>
+
+	<section class="tm-white-bg section-padding-bottom">
+		<div class="container">
+			<br />
+			<div class="row">
+				<a href="transaction.html" class="form-group text-center">
+					<button type="submit" name="submit" class="form-group btn btn-success text-center">TRANSACTION SUCCESSFUL<i class="fa fa-check tm-home-box-2-icon border-left"></i></button>
+				</a> 
+			</div>	
+			<br /><br />
+			<div class="row">
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<table class="table">
+						<tr><th>JOURNEY INFO</th></tr>
+						<tr><td>Name </td> <td>Titus N</td></tr>
+						<tr><td>Destination </td> <td>Bamenda to Yaounde</td></tr>
+						<tr><td>Bus Suit </td> <td>VIP</td></tr>
+						<tr><td>Time </td> <td>Night Journey</td></tr>
+						<tr><td>Total Seat(s) </td> <td>4</td></tr>
+						<tr><td>Seat Number(s) </td> <td>23 || 24 || 25 || 26</td></tr>
+					</table>
+				</div>	
+				<div class="col-lg-6 col-md-6 col-sm-6">
+					<table class="table">
+						<tr><th>TRANSACTION INFO</th></tr>
+						<tr><td>Amount Paid </td> <td>24, 000 XAF</td></tr>
+						<tr><td>Travu Charges </td> <td>200 XAF</td></tr>
+						<tr><td>Balance </td> <td>0 XAF</td></tr>
+						<tr><td>Total Amount </td> <td>24, 200 XAF</td></tr>
+						<tr><td>Transaction Code </td> <td><b>T5202</b></td></tr>
+					</table>
+					<a href="">
+						<div class="form-group tm-yellow-gradient-bg text-center">
+							<button type="submit" name="submit" class="tm-yellow-btn">DOWNLOAD PDF</button>
+						</div> 
+					</a> 
+				</div>	
+			</div>
+		</div>	
+	</section>
+
+	<br>
+	
+	
+	<footer class="tm-black-bg">
+		<div class="container">
+			<div class="row">
+				<p class="tm-copyright-text">Copyright &copy; Travu</p>
+			</div>
+		</div>		
+	</footer>
+	<script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>      		<!-- jQuery -->
+  	<script type="text/javascript" src="js/moment.js"></script>							<!-- moment.js -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>					<!-- bootstrap js -->
+	<script type="text/javascript" src="js/bootstrap-datetimepicker.min.js"></script>	<!-- bootstrap date time picker js, http://eonasdan.github.io/bootstrap-datetimepicker/ -->
+	<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+<!--
+	<script src="js/froogaloop.js"></script>
+	<script src="js/jquery.fitvid.js"></script>
+-->
+   	<script type="text/javascript" src="js/templatemo-script.js"></script>      		<!-- Templatemo Script -->
+	<script>
+		// HTML document is loaded. DOM is ready.
+		$(function() {
+
+			$('#hotelCarTabs a').click(function (e) {
+			  e.preventDefault()
+			  $(this).tab('show')
+			})
+
+        	$('.date').datetimepicker({
+            	format: 'MM/DD/YYYY'
+            });
+            $('.date-time').datetimepicker();
+
+			// https://css-tricks.com/snippets/jquery/smooth-scrolling/
+		  	$('a[href*=#]:not([href=#])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').animate({
+			          scrollTop: target.offset().top
+			        }, 1000);
+			        return false;
+			      }
+			    }
+		  	});
+		});
+		
+		// Load Flexslider when everything is loaded.
+		$(window).load(function() {	  		
+			// Vimeo API nonsense
+
+/*
+			  var player = document.getElementById('player_1');
+			  $f(player).addEvent('ready', ready);
+			 
+			  function addEvent(element, eventName, callback) {
+			    if (element.addEventListener) {
+			      element.addEventListener(eventName, callback, false)
+			    } else {
+			      element.attachEvent(eventName, callback, false);
+			    }
+			  }
+			 
+			  function ready(player_id) {
+			    var froogaloop = $f(player_id);
+			    froogaloop.addEvent('play', function(data) {
+			      $('.flexslider').flexslider("pause");
+			    });
+			    froogaloop.addEvent('pause', function(data) {
+			      $('.flexslider').flexslider("play");
+			    });
+			  }
+*/
+
+			 
+			 
+			  // Call fitVid before FlexSlider initializes, so the proper initial height can be retrieved.
+/*
+
+			  $(".flexslider")
+			    .fitVids()
+			    .flexslider({
+			      animation: "slide",
+			      useCSS: false,
+			      animationLoop: false,
+			      smoothHeight: true,
+			      controlNav: false,
+			      before: function(slider){
+			        $f(player).api('pause');
+			      }
+			  });
+*/
+
+
+			  
+
+//	For images only
+		    $('.flexslider').flexslider({
+			    controlNav: false
+		    });
+
+
+	  	});
+	</script>
+ </body>
+ </html>
